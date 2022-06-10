@@ -1,38 +1,79 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#NewTask {
+  width: 432px;
+  height: 600px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#TodoList {
+  width: 576px;
+  height: 600px;
+  border: 1px solid black;
+  border-left: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+#TodoList_body {
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#taskList {
+  overflow: scroll;
+}
+#search {
+  margin-bottom: 10px;
+}
+.title {
+  font-weight: bold;
+}
+#bulkAction {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #e0e0e0;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+#doneButton {
+  background-color: #3096f3;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#doneButton:hover {
+  background-color: #4ba3f6;
+  cursor: pointer;
+}
+@media screen and (max-device-width: 760px) {
+  .App {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+    overflow: scroll;
   }
-  to {
-    transform: rotate(360deg);
+  #NewTask {
+    width: 100%;
+  }
+  #TodoList {
+    width: 100%;
+  }
+}
+@media screen and (max-device-height: 600px) {
+  .App {
+    height: fit-content;
+    overflow: scroll;
   }
 }

@@ -1,0 +1,117 @@
+/* TaskDetail.js */
+.input {
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 0 10px 0;
+}
+#selectableArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.selectableItem {
+  width: 170px;
+}
+#calendar {
+  background-color: transparent;
+  border: none;
+}
+#calendar:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+#AddButton {
+  margin-top: 60px;
+  width: 100%;
+  background-color: #50af50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 0 10px 0;
+}
+#AddButton:hover {
+  background-color: #59c359;
+  cursor: pointer;
+}
+.priorityValue {
+  font-size: 16px;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#priority {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  width: 45%;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px lightgrey;
+}
+.priorityItem {
+  padding: 10px 0px 10px 10px;
+  text-align: left;
+}
+.priorityItem:hover {
+  background-color: rgb(229, 229, 229);
+  cursor: pointer;
+}
+
+/* Task.js */
+.task {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 15px 20px 15px 20px;
+  margin: 10px 0 0 0;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.task_part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.taskTitle {
+  margin-left: 10px;
+  width: 100%;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.detailButton,
+.removeButton {
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.detailButton {
+  background-color: #4ebcd5;
+  padding: 8px 30px 8px 30px;
+}
+.removeButton {
+  background-color: #d9534f;
+  padding: 8px 15px 8px 15px;
+  margin-left: 10px;
+}
+.detailButton:hover {
+  background-color: #52c9e3;
+  cursor: pointer;
+}
+.removeButton:hover {
+  background-color: #e95a55;
+  cursor: pointer;
+}
